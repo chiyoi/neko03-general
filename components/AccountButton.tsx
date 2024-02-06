@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState, useEffect } from 'react'
 import { Connector, useAccount, useConnect, useConnectors, useDisconnect } from 'wagmi'
 import { Avatar, DropdownMenu, IconButton, Tooltip } from '@radix-ui/themes'

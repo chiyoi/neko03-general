@@ -25,10 +25,10 @@
     "react-blurhash": "^0.3.0",
     "react-dom": "^18.2.0",
     "viem": "^2.5.0",
-    "wagmi": "^2.5.2",
-    "typescript": "^5"
+    "wagmi": "^2.5.2"
   },
   "devDependencies": {
+    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-blockies": "^1.4.4",

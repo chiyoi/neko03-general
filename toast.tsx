@@ -1,3 +1,4 @@
+import React from 'react'
 import { createContext, useCallback, useContext, useState } from 'react'
 import { styled, keyframes } from '@stitches/react'
 import { Flex, IconButton } from '@radix-ui/themes'
