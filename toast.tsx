@@ -10,14 +10,13 @@ import { ChildrenProps } from './internal/props'
 
 const VIEWPORT_MARGIN = 30
 
-const ToastContext = createContext((_: string) => { })
+const ToastContext = createContext((content: string) => { })
 export const useToast = () => useContext(ToastContext)
-export const ToastProvider = (props: ChildrenProps) => {
-  const { children } = props
-  const [title, setTitle] = useState('')
+export const ToastProvider = ({ children }: ChildrenProps) => {
+  const [content, setContent] = useState('')
   const [open, setOpen] = useState(false)
   const toast = useCallback((title: string) => {
-    setTitle(title)
+    setContent(title)
     setOpen(true)
   }, [])
   return useMounted() && (
@@ -38,7 +37,7 @@ export const ToastProvider = (props: ChildrenProps) => {
             marginTop: 5,
             marginBlock: 5,
           }}>
-            <Toast.Title style={{ ...FontNotoSansMono }}>{title}</Toast.Title>
+            <Toast.Title style={{ ...FontNotoSansMono }}>{content}</Toast.Title>
             <Toast.Close asChild style={{
               gridArea: 'action',
             }}>

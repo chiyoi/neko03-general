@@ -1,0 +1,20 @@
+{
+  "name": "neko03-general-example",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@radix-ui/themes": "^2.0.3",
+    "@stitches/react": "^1.2.8",
+    "next": "14.1.0",
+    "next-themes": "^0.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "yarn@4.1.0"
+}
